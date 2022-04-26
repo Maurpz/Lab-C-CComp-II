@@ -4,7 +4,7 @@
 #include<cmath>
 #include<vector>
 using namespace std;
-int main(){/*
+int main(){
     int a=0;int b =0;
     cout<<"Ingrese un numero entero : ";cin>>a;
     cout<<"Ingrese otro numero entero : ";cin>>b;
@@ -17,17 +17,22 @@ int main(){/*
     cout<<"Su correo institucional es : "<<nombre[0]<<apellido_p<<apellido_m[0]<<"@unsa.edu.pe"<<endl;
     return 0;
 
-    /*3*/
+    /*3*//*
+    string hora_p,h_aux;
+    int h_4,m_4;
+    cout<<"Ingrese la hora como muestra el ejemplo (HH:MM) : ";cin>>hora_p;
+    h_4=stoi(hora_p[0]+hora_p[1])
+
     
     /*4*/
 
     /*5*/
-    /*
+    
     float n_f =0;
     cout<<"Introduzca el numero flotante : ";cin>>n_f;
     cout<<"EL numero redondeado es : "<<round(n_f)<<endl;
     /*6*/
-    /*
+    
 
     bool s=true;
     int n_6=0;
@@ -53,6 +58,7 @@ int main(){/*
     if((n_71%n_72)==0){cout<<n_72<<" es divisor de "<<n_71<<endl;}
     else if((n_72%n_71)==0){cout<<n_71<<" es divisor de "<<n_72<<endl;}
     else{cout<<"Ninguno de los 2 numeros ingresados son divisibles entre si .."<<endl;}
+    
     
     
     
