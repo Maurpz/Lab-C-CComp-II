@@ -98,7 +98,7 @@ void funcion(){
     
 // }
 
-int main(){/*
+int main(){
 
 
     //1
@@ -123,7 +123,7 @@ int main(){/*
     int n_4;
     cout<<"Ingrese un numero limite para su lista de primos : ";cin>>n_4;
     lista_primos(n_4);
-    */
+    
     //5
    cout<<"\nEjercicio 5 "<<endl;
   funcion();
