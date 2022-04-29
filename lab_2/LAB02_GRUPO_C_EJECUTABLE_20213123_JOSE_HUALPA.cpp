@@ -7,31 +7,57 @@ int main(){
     //Estan comentados para que no generen problemas a la hora de compilarlo
 
     //1
+    /*
     cout<<"Ejercicio 1 "<<endl;
     int suma_1=0;
     for(int i=0;i<=50;i++){
         suma_1+=i*2;
     }
     cout<<"La suma de los enteros pares del 2 hasta el 100 es : "<<suma_1<<endl;
-/*
+    
+
     //2
     cout<<"Ejercicio 2 "<<endl;
     vector <int> n_primos;
     int numero_2=2;
-    while(n_primos.size()<=50){
-        for (int i=numero_2;i<0;i--){
-            if (numero_2%i==0){}
+    int c_2=0;
+    bool s=false;
+    while(s==false){
+        for(int i=numero_2;i>0;i--){
+            if(numero_2%i==0){c_2++;}
+            else{continue;}
+            if(c_2>2){break;}
         }
+        if(c_2==2){n_primos.emplace_back(numero_2);}
+        numero_2++;
+        c_2=0;
+        if(n_primos.size()==50){s=true;}
     }
+    cout<<"Los 50 primeros numeros primos son : "<<endl;
+    for(auto it=n_primos.begin();it!=n_primos.end();it++){
+        cout<<*it<<" ";
+    }
+    
+    
+
+    
     //3
     cout<<"Ejercicio 3 "<<endl;
     cout<<"Los numeros multiplos del5 del 1 al 100 : ";
     for(int i=1;i<=100;i++){
         cout<<i*5<<" ";
     }
+    */
 
 
    //4
+
+
+
+
+
+
+/*
 
     //5
    cout<<"Ejercicio 5 "<<endl;
@@ -49,15 +75,38 @@ int main(){
        if(max_5<=*it){max_5=*it;media_5+=*it;}
        else if(min_5>=*it){min_5=*it;media_5+=*it;}
        else{media_5+=*it;}
-      }
+   }
+
       cout<<"El numero maximo introducido es : "<<max_5<<endl;
       cout<<"El numero minimo introducido es : "<<min_5<<endl;
       cout<<"La media de los numeros introducidos es : "<<media_5/numeros_5<<endl;
  
+    
+    */
+    //6
+    
+    cout<<"Ejercicio 6 "<<endl;
+    vector <int> fibo_6;
+    int aux_6;
+    int limite_6 =0;
+    bool s_6=false;
+    fibo_6.emplace_back(1);fibo_6.emplace_back(1);
+    cout<<"Ingrese cuantos numeros de fibonacci desea : ";cin>>limite_6;
+    while(s_6==false&&fibo_6.size()!=limite_6){
+        aux_6=fibo_6[(fibo_6.size())-1]+fibo_6[(fibo_6.size())-2];
+        fibo_6.emplace_back(aux_6);
+        if(fibo_6.size()==limite_6){s_6=true;}
+    }
+    cout<<"La sucesion generada es : ";
+    for(auto it=fibo_6.begin();it!=fibo_6.end();it++){
+        cout<<*it<<" ";
+    }
 
-     //6
 
 
+
+
+/*
     //7
      cout<<"Ejercicio 7 "<<endl;
      int a_7=0;
