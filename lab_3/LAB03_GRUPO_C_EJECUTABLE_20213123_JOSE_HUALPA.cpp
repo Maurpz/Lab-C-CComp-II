@@ -81,6 +81,39 @@ void funcion(){
     }
     
 }
+void edad_exa(){
+    int d_a,m_a,a_a;
+    int d_n,m_n,a_n;
+    int a_aux,m_aux,d_aux;
+    int edad [3];
+    //cout<<"Ingrese la fecha del dia de hoy separado por espacios ejem.(dia mes anio) : ";cin>>d_a;cin>>m_a;cin>>a_a;
+    //cout<<"Ingrese la fecha de su nacimiento (dia mes anio) : ";cin>>d_n;cin>>m_n;cin>>a_n;
+    if(d_a==d_n&&m_a==m_n&&a_a==a_n){cout<<"Su edad es "<<a_a-a_n<<" con 0 meses y 0 dias ¡¡Hoy es su cumple!!"<<endl;}
+    else{
+        cout<<"fecha ac: "<<d_a<<m_a<<a_a<<endl;
+        cout<<"naci : "<<d_n<<m_n<<a_n<<endl;
+        if(d_a<d_n){m_aux=m_a-1;}
+
+
+        //a_aux=a_a-1;
+        int m_e=0;
+        bool s=true;
+        
+        for(int i=8;(i%12)!=4;i++){
+            cout<<i<<endl;
+            m_e++;
+        }
+        
+       cout<<"peroo ->"<<4%12<<"cuanto es "<<endl;
+       
+     
+        cout<<"edad mes : "<<m_e;
+    }
+
+    
+
+
+}
 
 //5.1
 // int suma_impares(){
@@ -99,6 +132,7 @@ void funcion(){
 // }
 
 int main(){
+    /*
 
 
     //1
@@ -127,6 +161,8 @@ int main(){
     //5
    cout<<"\nEjercicio 5 "<<endl;
   funcion();
+  */
+ edad_exa();
 
    return 0;
    
